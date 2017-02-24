@@ -53,9 +53,6 @@ plugins=(git git-flow git-extras autojump command-not-found docker npm brew)
 
 # User configuration
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
-# export MANPATH="/usr/local/man:$MANPATH"
-
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
@@ -105,7 +102,19 @@ REACT_EDITOR=mvim
 # ############ 
 export ANDROID_HOME=/usr/local/opt/android-sdk
 
+####################
+#  autosuggestion  #
+####################
+source ~/.zsh-custom-plugins/autosuggestions/zsh-autosuggestions.zsh
+
 # # ##################
 #   zsh completion  # 
 # ################### 
 fpath=(/usr/local/share/zsh-completions $fpath)
+
+##########
+#  PATH  #
+##########
+#export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+export PATH="$HOME/.bin:/usr/local/sbin:$PATH"
+# export MANPATH="/usr/local/man:$MANPATH"

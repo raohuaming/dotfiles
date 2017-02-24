@@ -1,3 +1,6 @@
 [submodule "zsh"]
 	path = zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
+[submodule "zsh-custom-plugins/autosuggestions"]
+	path = zsh-custom-plugins/autosuggestions
+	url = git://github.com/zsh-users/zsh-autosuggestions

@@ -28,25 +28,81 @@ call plug#begin('~/.vim/bundle')
 
 " Define bundles via Github repos
 Plug 'christoomey/vim-run-interactive'
+" Fuzzy file, buffer, mru, tag, etc finder
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'fatih/vim-go'
 Plug 'janko-m/vim-test'
 Plug 'kchmck/vim-coffee-script'
 Plug 'pbrisbin/vim-mkdir'
+" Syntax checking hacks for vim
 Plug 'scrooloose/syntastic'
 Plug 'slim-template/vim-slim'
 Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-eunuch'
+" A Git wrapper
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-projectionist'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-rake'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-rhubarb'
+" quoting/parenthesizing made simple
 Plug 'tpope/vim-surround'
 Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/tComment'
+" A tree explorer plugin
+Plug 'scrooloose/nerdtree'
+" A plugin of NERDTruee showing git status
+Plug 'Xuyuanp/nerdtree-git-plugin'
+" lean & mean status/tabline for vim that's light as air
+Plug 'bling/vim-airline'
+" Vim plugin for intensely orgasmic commenting
+Plug 'scrooloose/nerdcommenter'
+" Vim motions on speed
+Plug 'easymotion/vim-easymotion'
+" A code-completion engine for vim
+"Plug 'Valloric/YouCompleteMe'
+" Next generation completion framework after neocomplcache
+Plug 'shougo/neocomplete.vim'
+" one colorscheme pack to rule them all
+Plug 'flazz/vim-colorschemes'
+" Vim Space Controller
+Plug 'szw/vim-ctrlspace'
+" Gentle version of Auto Pairs plugin: insert or delete brackets, parens in pair
+Plug 'auto-pairs-gentle'
+" The ultimate snippet solution for vim
+Plug 'SirVer/ultisnips'
+" Useful snippets for developing in react and flux.
+"Plug 'mlaursen/vim-react-snippets'
+" vim-snipmate default snippets
+Plug 'honza/vim-snippets'
+" Vastly improved javascript indentation and syntax support in Vim
+Plug 'pangloss/vim-javascript'
+" paris of handy bracket mappings
+Plug 'tpope/vim-unimpaired'
+" Preform all your vim insert mode completions with Tab
+Plug 'ervandew/supertab'
+" emmet for vim: http://emmet.io/
+Plug 'mattn/emmet-vim'
+" Vim plugin for the Perl module / CLI script 'ack'
+Plug 'mileszs/ack.vim'
+" Vim script for text filtering and alignment
+Plug 'godlygeek/tabular'
+" Android development plugin for vim
+" Plug 'usanson/vim-android'
+" Adds Swift support to vim. It covers syntax, intenting, and more.
+" Plug 'toyamarinyon/vim-swift'
+" Vim plugin that use clang for completing C/C++ code
+"Plug 'rip-rip/clang_complete'
+"Plug 'myint/clang_complete'
+" Vim plugin that displays tags in a window, ordered by scope
+Plug 'majutsushi/tagbar'
+" Automated tag file generation and syntax highlighting of tags in Vim
+Plug 'xolox/vim-easytags'
+" Miscellaneous auto-load Vim scripts
+Plug 'xolox/vim-misc'
+
 
 if filereadable(expand("~/.vimrc.bundles.local"))
   source ~/.vimrc.bundles.local

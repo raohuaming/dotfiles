@@ -107,6 +107,12 @@ export ANDROID_HOME=/usr/local/opt/android-sdk
 ####################
 source ~/.zsh-custom-plugins/autosuggestions/zsh-autosuggestions.zsh
 
+######################
+#  www.gitignore.io  #
+######################
+function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
+
+
 # # ##################
 #   zsh completion  # 
 # ################### 

@@ -112,6 +112,10 @@ source ~/.zsh-custom-plugins/autosuggestions/zsh-autosuggestions.zsh
 ######################
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
+#######################
+#  startx for docker  #
+#######################
+source ~/.zsh-custom-plugins/startx/startx.zsh
 
 # # ##################
 #   zsh completion  # 

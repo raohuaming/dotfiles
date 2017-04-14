@@ -29,14 +29,14 @@ call plug#begin('~/.vim/bundle')
 " Define bundles via Github repos
 Plug 'christoomey/vim-run-interactive'
 " Fuzzy file, buffer, mru, tag, etc finder
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'fatih/vim-go'
+"Plug 'ctrlpvim/ctrlp.vim'
+"Plug 'fatih/vim-go'
 Plug 'janko-m/vim-test'
-Plug 'kchmck/vim-coffee-script'
+"Plug 'kchmck/vim-coffee-script'
 Plug 'pbrisbin/vim-mkdir'
 " Syntax checking hacks for vim
 Plug 'scrooloose/syntastic'
-Plug 'slim-template/vim-slim'
+"Plug 'slim-template/vim-slim'
 Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-eunuch'
@@ -102,6 +102,8 @@ Plug 'majutsushi/tagbar'
 Plug 'xolox/vim-easytags'
 " Miscellaneous auto-load Vim scripts
 Plug 'xolox/vim-misc'
+" Provide easy code formatting in Vim by integrating existing code formatters.
+Plug 'Chiel92/vim-autoformat'
 
 
 if filereadable(expand("~/.vimrc.bundles.local"))

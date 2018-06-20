@@ -49,7 +49,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-flow git-extras autojump command-not-found docker npm brew)
+plugins=(git git-hubflow git-extras autojump command-not-found docker npm brew)
 
 # User configuration
 
@@ -62,7 +62,7 @@ source $ZSH/oh-my-zsh.sh
 if [[ -n $SSH_CONNECTION ]]; then
  export EDITOR='vim'
 else
- export EDITOR='mvim'
+ export EDITOR='vim'
 fi
 
 # Compilation flags
@@ -96,7 +96,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # # ################
 #   React Native  # 
 # ################# 
-REACT_EDITOR=mvim
+REACT_EDITOR=vim
 
 # # ###########
 #   Android  # 

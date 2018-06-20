@@ -70,7 +70,8 @@ Plug 'flazz/vim-colorschemes'
 " Vim Space Controller
 Plug 'szw/vim-ctrlspace'
 " Gentle version of Auto Pairs plugin: insert or delete brackets, parens in pair
-Plug 'auto-pairs-gentle'
+"Plug 'auto-pairs-gentle'
+Plug 'jiangmiao/auto-pairs'
 " The ultimate snippet solution for vim
 Plug 'SirVer/ultisnips'
 " Useful snippets for developing in react and flux.
@@ -104,6 +105,12 @@ Plug 'xolox/vim-easytags'
 Plug 'xolox/vim-misc'
 " Provide easy code formatting in Vim by integrating existing code formatters.
 Plug 'Chiel92/vim-autoformat'
+" A vim plugin wrapper for prettier
+Plug 'prettier/vim-prettier'
+"This package provides kubernetes YAML snippets, as well as a growing number of integrations with kubectl.
+Plug 'andrewstuart/vim-kubernetes'
+" Vim syntax file for solidity
+Plug 'tomlion/vim-solidity'
 
 
 if filereadable(expand("~/.vimrc.bundles.local"))

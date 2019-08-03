@@ -144,7 +144,7 @@ export PATH="$HOME/.bin:/usr/local/sbin:$PATH"
 #############
 #  gitflow  #
 #############
-source /usr/share/zsh/site-functions/git-flow-completion.zsh
+source /usr/local/share/zsh/site-functions/git-flow-completion.zsh
 
 ###########
 #  pyenv  #

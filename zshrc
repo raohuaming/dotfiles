@@ -118,6 +118,11 @@ function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 #######################
 source ~/.zsh-custom-plugins/startx/startx.zsh
 
+#################
+#  docker-tags  #
+#################
+source ~/.zsh-custom-plugins/docker-tags/docker-tags.zsh
+
 # # ##################
 #   zsh completion  # 
 # ################### 
@@ -129,3 +134,14 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 #export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 export PATH="$HOME/.bin:/usr/local/sbin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
+
+##########
+#  asdf  #
+##########
+. /opt/asdf-vm/asdf.sh
+. /opt/asdf-vm/completions/asdf.bash
+
+#############
+#  gitflow  #
+#############
+source /usr/share/zsh/site-functions/git-flow-completion.zsh

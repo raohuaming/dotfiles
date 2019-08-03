@@ -138,10 +138,23 @@ export PATH="$HOME/.bin:/usr/local/sbin:$PATH"
 ##########
 #  asdf  #
 ##########
-. /opt/asdf-vm/asdf.sh
-. /opt/asdf-vm/completions/asdf.bash
+. /usr/local/opt/asdf/asdf.sh
+. /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
 
 #############
 #  gitflow  #
 #############
 source /usr/share/zsh/site-functions/git-flow-completion.zsh
+
+###########
+#  pyenv  #
+###########
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+###########
+#  kube-ps1  #
+###########
+source ~/dotfiles/kube-ps1.sh
+PROMPT='$(kube_ps1)'$PROMPT
